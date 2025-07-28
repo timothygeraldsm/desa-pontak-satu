@@ -71,30 +71,6 @@ export default function PotensiPage() {
           </div>
         </div>
       </section>
-
-      {/* Call to Action - Kept as it's a generic section */}
-      <section className="py-12 bg-primary text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Tertarik Berinvestasi atau Berkunjung?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Hubungi kami untuk informasi lebih lanjut tentang peluang investasi dan paket wisata
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/kontak"
-              className="inline-flex items-center px-8 py-3 bg-secondary hover:bg-green-600 text-white font-semibold rounded-lg transition-colors duration-200"
-            >
-              Hubungi Kami
-            </a>
-            <a
-              href="/berita"
-              className="inline-flex items-center px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white font-semibold rounded-lg transition-colors duration-200"
-            >
-              Lihat Berita Terkini
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
