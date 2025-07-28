@@ -173,7 +173,7 @@ export default function HomePage() {
     date: "27 Juli 2025",
     excerpt:
       "Mahasiswa KKT Universitas Sam Ratulangi Posko 143 Desa Pontak Satu mendapatkan kunjungan dari dosen pembimbing lapangan, Dr. Jessy J. Pondaag. Kunjungan ini merupakan bagian dari monitoring kegiatan mahasiswa KKT dan silaturahmi dengan masyarakat.",
-    image: "/images/BERITA 1.png",
+    image: "/foto/BERITA 1.png",
   },
   {
     title:
@@ -181,7 +181,7 @@ export default function HomePage() {
     date: "25 Juli 2025",
     excerpt:
       "Kunjungan Ir. Yaulie Rindengan ke Posko KKT 143 merupakan bentuk dukungan fakultas terhadap mahasiswa. Beliau berdiskusi langsung dengan masyarakat dan mahasiswa, serta menekankan pentingnya kontribusi nyata dalam pembangunan desa.",
-    image: "/images/BERITA 2.png",
+    image: "/foto/BERITA 2.png",
   },
   {
     title:
@@ -189,7 +189,7 @@ export default function HomePage() {
     date: "25 Juli 2025",
     excerpt:
       "Mahasiswa KKT menyerahkan cenderamata berupa papan nama untuk kantor Hukum Tua sebagai bentuk apresiasi dan kontribusi dalam memperkuat identitas kelembagaan desa.",
-    image: "/images/BERITA 3.png",
+    image: "/foto/BERITA 3.png",
   },
 ]
 .map((news, index) => (
