@@ -128,7 +128,7 @@ export default function BeritaPage() {
   src={berita.image || "/placeholder.svg"}
   alt={berita.title}
   width={400}
-  height={300}
+  height={500}
   className="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 hover:scale-105"
 />
 
