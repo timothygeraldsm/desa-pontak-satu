@@ -42,7 +42,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1">
                 <Image
-                  src="/foto/Hukum Tua.png"
+                  src="/foto/Hukum Tua.jpeg"
                   alt="Kepala Desa Pontak Satu"
                   width={300}
                   height={300}
@@ -167,27 +167,32 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              {
-                title: "Pembangunan Jalan Desa Tahap II Dimulai",
-                date: "15 Januari 2024",
-                excerpt: "Proyek pembangunan jalan desa tahap kedua telah dimulai dengan anggaran dari APBDes 2024...",
-                image: "/placeholder.svg?height=200&width=400",
-              },
-              {
-                title: "Program Bantuan Bibit Tanaman untuk Petani",
-                date: "12 Januari 2024",
-                excerpt:
-                  "Desa Pontak Satu meluncurkan program bantuan bibit tanaman untuk meningkatkan hasil pertanian...",
-                image: "/placeholder.svg?height=200&width=400",
-              },
-              {
-                title: "Pelatihan Digital Marketing untuk UMKM",
-                date: "10 Januari 2024",
-                excerpt:
-                  "Pelatihan digital marketing diselenggarakan untuk membantu UMKM desa memasarkan produk secara online...",
-                image: "/placeholder.svg?height=200&width=400",
-              },
-            ].map((news, index) => (
+  {
+    title:
+      "Dosen Pembimbing Lapangan Dr. Jessy J. Pondaag, S.E., M.Si Kunjungi Mahasiswa KKT 143 Posko Pontak Satu",
+    date: "27 Juli 2025",
+    excerpt:
+      "Mahasiswa KKT Universitas Sam Ratulangi Posko 143 Desa Pontak Satu mendapatkan kunjungan dari dosen pembimbing lapangan, Dr. Jessy J. Pondaag. Kunjungan ini merupakan bagian dari monitoring kegiatan mahasiswa KKT dan silaturahmi dengan masyarakat.",
+    image: "/images/BERITA 1.png",
+  },
+  {
+    title:
+      "Ir. Yaulie Rindengan, S.T., M.Sc., MM Lakukan Kunjungan Lapangan ke Posko KKT 143 Desa Pontak Satu",
+    date: "25 Juli 2025",
+    excerpt:
+      "Kunjungan Ir. Yaulie Rindengan ke Posko KKT 143 merupakan bentuk dukungan fakultas terhadap mahasiswa. Beliau berdiskusi langsung dengan masyarakat dan mahasiswa, serta menekankan pentingnya kontribusi nyata dalam pembangunan desa.",
+    image: "/images/BERITA 2.png",
+  },
+  {
+    title:
+      "Mahasiswa KKT 143 Serahkan Cenderamata Berupa Papan Nama Kantor Hukum Tua Desa Pontak Satu",
+    date: "25 Juli 2025",
+    excerpt:
+      "Mahasiswa KKT menyerahkan cenderamata berupa papan nama untuk kantor Hukum Tua sebagai bentuk apresiasi dan kontribusi dalam memperkuat identitas kelembagaan desa.",
+    image: "/images/BERITA 3.png",
+  },
+]
+.map((news, index) => (
               <div
                 key={index}
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200"
