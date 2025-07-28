@@ -125,12 +125,13 @@ export default function BeritaPage() {
                 className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200"
               >
                 <Image
-                  src={berita.image || "/placeholder.svg"}
-                  alt={berita.title}
-                  width={400}
-                  height={200}
-                  className="w-full h-48 object-cover"
-                />
+  src={berita.image || "/placeholder.svg"}
+  alt={berita.title}
+  width={400}
+  height={300}
+  className="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 hover:scale-105"
+/>
+
                 <div className="p-6">
                   <div className="flex items-center justify-between text-sm text-gray-500 mb-3">
                     <div className="flex items-center">
