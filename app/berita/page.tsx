@@ -82,7 +82,7 @@ export default function BeritaPage() {
                   src={beritaTerkini[0].image || "/placeholder.svg"}
                   alt={beritaTerkini[0].title}
                   width={600}
-                  height={400}
+                  height={600}
                   className="w-full h-64 lg:h-full object-cover"
                 />
                 <div className="absolute top-4 left-4">
