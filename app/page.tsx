@@ -42,7 +42,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1">
                 <Image
-                  src="/foto/Hukum Tua.jpeg"
+                  src="/foto/Hukum Tua.png"
                   alt="Kepala Desa Pontak Satu"
                   width={300}
                   height={300}
@@ -159,58 +159,69 @@ export default function HomePage() {
 
       {/* Recent News */}
       <section className="py-16 bg-accent">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl font-bold text-gray-800 mb-4">Berita Terkini</h2>
-      <p className="text-gray-600">Update terbaru dari Desa Pontak Satu</p>
-    </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Berita Terkini</h2>
+            <p className="text-gray-600">Update terbaru dari Desa Pontak Satu</p>
+          </div>
 
-    <div className="space-y-8">
-      {[
-        {
-          title: "Serah Terima Jabatan Pejabat Hukum Tua Lama ke Pejabat Baru",
-          date: "9 Juli 2025",
-          excerpt:
-            "Desa Pontak Satu melaksanakan prosesi serah terima jabatan dari pejabat hukum tua lama ke pejabat baru, disaksikan oleh perangkat desa dan mahasiswa KKT UNSRAT...",
-          image: "/foto/BERITA 1.png",
-        },
-        {
-          title: "Kunjungan Dr. Jessy J. Pondaag ke Posko KKT 143",
-          date: "22 Juli 2025",
-          excerpt:
-            "Dosen Pembimbing Lapangan, Dr. Jessy J. Pondaag, melakukan dua kali kunjungan untuk memantau dan memberi apresiasi terhadap kegiatan KKT mahasiswa di Pontak Satu...",
-          image: "/foto/BERITA 2.png",
-        },
-        {
-          title: "Ir. Yaulie Rindengan Tinjau Kegiatan KKT Mahasiswa UNSRAT",
-          date: "25 Juli 2025",
-          excerpt:
-            "Ir. Yaulie Rindengan melakukan kunjungan untuk mengevaluasi pelaksanaan program kerja mahasiswa KKT UNSRAT di Desa Pontak Satu...",
-          image: "/foto/BERITA 3.png",
-        },
-      ].map((news, index) => (
-        <div
-          key={index}
-          className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300"
-        >
-          <img
-            src={news.image}
-            alt={news.title}
-            className="w-full h-64 object-cover"
-          />
-          <div className="p-6">
-            <p className="text-sm text-gray-500 mb-2">{news.date}</p>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              {news.title}
-            </h3>
-            <p className="text-gray-600">{news.excerpt}</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Pembangunan Jalan Desa Tahap II Dimulai",
+                date: "15 Januari 2024",
+                excerpt: "Proyek pembangunan jalan desa tahap kedua telah dimulai dengan anggaran dari APBDes 2024...",
+                image: "/placeholder.svg?height=200&width=400",
+              },
+              {
+                title: "Program Bantuan Bibit Tanaman untuk Petani",
+                date: "12 Januari 2024",
+                excerpt:
+                  "Desa Pontak Satu meluncurkan program bantuan bibit tanaman untuk meningkatkan hasil pertanian...",
+                image: "/placeholder.svg?height=200&width=400",
+              },
+              {
+                title: "Pelatihan Digital Marketing untuk UMKM",
+                date: "10 Januari 2024",
+                excerpt:
+                  "Pelatihan digital marketing diselenggarakan untuk membantu UMKM desa memasarkan produk secara online...",
+                image: "/placeholder.svg?height=200&width=400",
+              },
+            ].map((news, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200"
+              >
+                <Image
+                  src={news.image || "/placeholder.svg"}
+                  alt={news.title}
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <p className="text-sm text-gray-500 mb-2">{news.date}</p>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-2">{news.title}</h3>
+                  <p className="text-gray-600 mb-4">{news.excerpt}</p>
+                  <Link href="/berita" className="text-primary font-semibold hover:underline">
+                    Baca selengkapnya →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link
+              href="/berita"
+              className="inline-flex items-center px-6 py-3 bg-primary hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Lihat Semua Berita
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
+      </section>
     </div>
   )
 }
