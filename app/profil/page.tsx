@@ -17,7 +17,6 @@ export default function ProfilPage() {
         <p className="text-xl text-gray-600">Mengenal lebih dekat Desa Pontak Satu</p>
       </div>
 
-            // ...existing code...
             {/* Sejarah Desa */}
             <section className="py-12 bg-white">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
