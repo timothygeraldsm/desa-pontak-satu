@@ -13,7 +13,7 @@ export default function BeritaPage() {
       date: "9 Juli 2025",
       author: "Pemerintah Desa",
       category: "Pemerintahan",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/foto/BERITA 1.HEIC",
       featured: true,
     },
     {
