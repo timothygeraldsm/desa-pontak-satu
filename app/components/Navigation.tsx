@@ -168,15 +168,6 @@ export default function Navigation() {
                       )
                     })}
                   </div>
-
-                  {/* Quick Contact in Desktop Menu */}
-                  <div className="border-t border-gray-100 mt-2 pt-2">
-                    <div className="px-4 py-3 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-lg">
-                      <p className="text-xs font-medium text-gray-800 mb-1">Kontak Cepat</p>
-                      <p className="text-xs text-gray-600">(021) 123-4567</p>
-                      <p className="text-xs text-gray-600">info@pontaksatu.desa.id</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
