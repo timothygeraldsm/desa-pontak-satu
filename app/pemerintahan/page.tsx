@@ -18,107 +18,50 @@ export default function PemerintahanPage() {
       </div>
 
       {/* Kepala Desa & Perangkat */}
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Hukum Tua & Perangkat</h2>
+<section className="py-12 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Hukum Tua & Perangkat</h2>
 
-          {/* Hukum Tua */}
-          <div className="bg-accent rounded-lg p-8 mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-              <div className="text-center">
-                <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="Hukum Tua"
-                  width={200}
-                  height={200}
-                  className="rounded-full mx-auto mb-4"
-                />
-              </div>
-              <div className="md:col-span-2">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Noldy S. Lumenta, S.E.</h3>
-                <p className="text-primary font-semibold mb-4">Hukum Tua Desa Pontak Satu</p>
-                <p className="text-gray-600">
-                  Memimpin Desa Pontak Satu dengan visi mewujudkan desa yang mandiri dan sejahtera melalui inovasi
-                  teknologi dan pemberdayaan masyarakat.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Perangkat Desa */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                name: "Melisa M. Soputan, S.Ag",
-                position: "Sekretaris Desa",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Efliyati Umboh",
-                position: "Kepala Urusan Keuangan",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Astri Lendo",
-                position: "Kepala Seksi Kesejahtraan",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Paskal Sumangkut, S.E.",
-                position: "Kepala Urusan Perencanaan",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Mediawati Umboh",
-                position: "Kepala Seksi Pemerintahan",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Eske Kolopita",
-                position: "Kepala Seksi Pelayanan",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Inry Pepah",
-                position: "Kepala Urusan Umum & Tata Usaha",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Alfonce Loloon",
-                position: "Kepala Jaga I",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Rafika Sutrisna Tulandi",
-                position: "Kepala Jaga II",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Livana Rawis",
-                position: "Kepala Jaga III",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-              {
-                name: "Imelda Umboh",
-                position: "Kepala Jaga IV",
-                image: "/placeholder.svg?height=150&width=150",
-              },
-            ].map((person, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center">
-                <Image
-                  src={person.image || "/placeholder.svg"}
-                  alt={person.name}
-                  width={150}
-                  height={150}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">{person.name}</h3>
-                <p className="text-primary font-medium">{person.position}</p>
-              </div>
-            ))}
-          </div>
+    {/* Hukum Tua */}
+    <div className="bg-accent rounded-lg p-8 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        {/* Hapus Image */}
+        <div className="text-center md:col-span-3">
+          <h3 className="text-2xl font-bold text-gray-800 mb-2">Noldy S. Lumenta, S.E.</h3>
+          <p className="text-primary font-semibold mb-4">Hukum Tua Desa Pontak Satu</p>
+          <p className="text-gray-600">
+            Memimpin Desa Pontak Satu dengan visi mewujudkan desa yang mandiri dan sejahtera melalui inovasi
+            teknologi dan pemberdayaan masyarakat.
+          </p>
         </div>
-      </section>
+      </div>
+    </div>
+
+    {/* Perangkat Desa */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[
+        { name: "Melisa M. Soputan, S.Ag", position: "Sekretaris Desa" },
+        { name: "Efliyati Umboh", position: "Kepala Urusan Keuangan" },
+        { name: "Astri Lendo", position: "Kepala Seksi Kesejahtraan" },
+        { name: "Paskal Sumangkut, S.E.", position: "Kepala Urusan Perencanaan" },
+        { name: "Mediawati Umboh", position: "Kepala Seksi Pemerintahan" },
+        { name: "Eske Kolopita", position: "Kepala Seksi Pelayanan" },
+        { name: "Inry Pepah", position: "Kepala Urusan Umum & Tata Usaha" },
+        { name: "Alfonce Loloon", position: "Kepala Jaga I" },
+        { name: "Rafika Sutrisna Tulandi", position: "Kepala Jaga II" },
+        { name: "Livana Rawis", position: "Kepala Jaga III" },
+        { name: "Imelda Umboh", position: "Kepala Jaga IV" },
+      ].map((person, index) => (
+        <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center">
+          {/* Tanpa Gambar */}
+          <h3 className="text-lg font-semibold text-gray-800 mb-2">{person.name}</h3>
+          <p className="text-primary font-medium">{person.position}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Lembaga Desa */}
       <section className="py-12 bg-accent">
