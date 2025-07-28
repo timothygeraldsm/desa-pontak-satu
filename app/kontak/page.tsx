@@ -73,16 +73,18 @@ export default function KontakPage() {
               </div>
             </div>
 
-            {/* Placeholder for Contact Form - Removed as no data provided */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-lg shadow-lg p-8 flex items-center justify-center h-full">
-                <div className="text-center text-gray-500">
-                  <Send className="w-16 h-16 mx-auto mb-4" />
-                  <p className="text-lg">Formulir kontak tidak tersedia.</p>
-                  <p className="text-sm mt-2">Silakan gunakan informasi kontak di samping.</p>
-                </div>
-              </div>
-            </div>
+  <div className="aspect-w-16 aspect-h-9 w-full">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15956.847958200064!2d124.48423899999999!3d0.9988985499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327e00757b4f718b%3A0xf9e4842a4f507b03!2sPontak%20Satu%2C%20Ranoyapo%2C%20South%20Minahasa%20Regency%2C%20North%20Sulawesi!5e0!3m2!1sen!2sid!4v1753733500140!5m2!1sen!2sid"
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      className="w-full h-full border-0"
+    ></iframe>
+  </div>
+</div>
+
           </div>
         </div>
       </section>
