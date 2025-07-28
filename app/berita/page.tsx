@@ -79,12 +79,13 @@ export default function BeritaPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative">
                 <Image
-                  src={beritaTerkini[0].image || "/placeholder.svg"}
-                  alt={beritaTerkini[0].title}
-                  width={600}
-                  height={600}
-                  className="w-full h-64 lg:h-full object-scale-down"
-                />
+  src={beritaTerkini[0].image || "/placeholder.svg"}
+  alt={beritaTerkini[0].title}
+  width={600}
+  height={600}
+  className="w-full max-h-[500px] object-contain"
+/>
+
                 <div className="absolute top-4 left-4">
                   <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Featured</span>
                 </div>
