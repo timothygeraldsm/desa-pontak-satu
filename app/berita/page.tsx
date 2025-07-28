@@ -83,7 +83,7 @@ export default function BeritaPage() {
                   alt={beritaTerkini[0].title}
                   width={600}
                   height={600}
-                  className="w-full h-64 lg:h-full object-cover"
+                  className="w-full h-64 lg:h-full object-scale-down"
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Featured</span>
