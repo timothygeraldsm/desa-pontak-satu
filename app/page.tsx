@@ -42,7 +42,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className="md:col-span-1">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/foto/Hukum Tua.jpeg"
                   alt="Kepala Desa Pontak Satu"
                   width={300}
                   height={300}
