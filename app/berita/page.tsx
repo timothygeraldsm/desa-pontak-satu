@@ -13,7 +13,7 @@ export default function BeritaPage() {
       date: "9 Juli 2025",
       author: "Pemerintah Desa",
       category: "Pemerintahan",
-      image: "/foto/BERITA 1.HEIC",
+      image: "/foto/BERITA 1.png",
       featured: true,
     },
     {
@@ -24,7 +24,7 @@ export default function BeritaPage() {
       date: "22 Juli 2025",
       author: "Tim KKT",
       category: "Pendidikan",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/foto/BERITA 2.png",
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ export default function BeritaPage() {
       date: "25 Juli 2025",
       author: "Tim KKT",
       category: "Pendidikan",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/foto/BERITA 3.png",
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ export default function BeritaPage() {
       date: "25 Juli 2025",
       author: "Mahasiswa KKT",
       category: "Pembangunan",
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/foto/BERITA 4.png",
     },
   ]
 
